@@ -1,0 +1,75 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{import}
+\import{./lib}{libcheatsheet.tex}
+
+\begin{document}
+\raggedright
+\raggedcolumns
+
+\newcommand {\dtype} [2] {#1 \hfill #2\%}
+
+\begin{tabularx}{\columnwidth}{ X | l r | p{3cm} p{3cm} }
+
+  \cardheader{5}{NPC Damage Types}
+  \headerrow{ 
+    \headercell{1}{Faction} &
+    \headercell{2}{Damage to Deal} &
+    \headercell{2}{Damage to Resist}
+  }
+  \row{AltRow}{Angel Cartel & Explosive & Kinetic & \dtype{Explosive}{62} & \dtype{Kinetic}{22}}
+  \row{Row}{Blood Raiders & EM & Thermal & \dtype{EM}{50} & \dtype{Thermal}{48} }
+  \row{AltRow}{Guristas Pirates & Kinetic & Thermal & \dtype{Kenetic}{79} & \dtype{Thermal}{18}}
+  \row{Row}{Mordu's Legion & Kinetic & EM & \dtype{Kenetic}{70} & \dtype{Thermal}{30}}
+  \row{AltRow}{Rogue Drones & EM & Thermal & - & -}
+  \row{Row}{Sansha's Nation \textsuperscript{missions}  & EM & Thermal & \dtype{EM}{53} & \dtype{Thermal}{47}}
+  \row{AltRow}{Serpentis & Kinetic & Thermal 	& \dtype{Thermal}{55} & \dtype{Kinetic}{45}}
+  \row{Row}{CONCORD & Kinetic & Thermal & \multicolumn{2}{c}{ALL}}
+  \row{AltRow}{Equilibrium of Mankind & \multicolumn{2}{c|}{Kinetic} & \dtype{Kinetic}{74} & \dtype{Thermal}{26}}
+  \row{Row}{Khanid Kingdom & EM & Thermal & \dtype{Thermal}{50} & \dtype{EM}{50}}
+  \row{AltRow}{Sleepers & \multicolumn{2}{c|}{ALL} & \multicolumn{2}{c}{ALL}}
+  \row{Row}{Sansha Nation \textsuperscript{incursions} & \multicolumn{2}{c|}{ALL} & \multicolumn{2}{c}{ALL}}
+  \row{AltRow}{Mercenaries & Kinetic & Thermal & \dtype{Kinetic}{50} & \dtype{Thermal}{50}}
+  \row{Row}{Triglavian Collective \textsuperscript{abyss} & Explosive & Thermal & \dtype{Thermal}{60} & \dtype{Explosive}{40}}
+  \row{AltRow}{Triglavian Collective \textsuperscript{invasions} & Explosive & Thermal & \multicolumn{2}{c}{ALL}}
+  \row{Row}{Amarr Empire 	& EM & Thermal & \dtype{EM}{47} & \dtype{Thermal}{42}}
+  \row{AltRow}{Caldari State & EM & Thermal & \dtype{Kinetic}{51} & \dtype{Thermal}{48}}
+  \row{Row}{Gallente Federation & Kinetic & Thermal & \dtype{Kinetic}{60} & \dtype{Thermal}{39}}
+  \row{AltRow}{Minmatar Republic & Explosive & Kinetic & \dtype{Explosive}{50} & \dtype{Kinetic}{31}}
+  \row{Row}{Amar Emptire \textsuperscript{EDENCOM} & Thermal & EM & \dtype{EM}{58} & \dtype{Thermal}{42}}
+  \row{AltRow}{Caldari State \textsuperscript{EDENCOM} & EM & Explosive & \dtype{EM}{51} & \dtype{Expliosive}{44}}
+  \row{AltRow}{Gallente Federation \textsuperscript{EDENCOM} & EM & Explosive & \dtype{EM}{58} & \dtype{Thermal}{42}}
+  \row{Row}{Minmatar Republic \textsuperscript{EDENCOM} & Kinetic & Explosive & \multicolumn{2}{c}{ALL}}
+\end{tabularx}
+
+
+\begin{multicols}{2}
+
+\card{New Card}{
+  \row{Row}{row 1}
+  \row{AltRow}{row 2}
+}
+
+\card{New Card} {
+  \row{Row}{row 1}
+  \row{AltRow}{row 2}
+}
+
+\cardthree{New Card} {
+  \row{Row}{ one & two & three}
+  \row{AltRow}{ one & two & three}
+}
+
+
+
+\vfill
+\columnbreak
+
+\cardthree{New Card} {
+  \row{Row}{ one & two & three}
+  \row{AltRow}{ one & two & three}
+}
+%
+\end{multicols}
+
+
+\end{document}
