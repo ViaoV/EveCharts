@@ -1,0 +1,36 @@
+\newcommand {\dtype} [2] {#1 \hfill #2\%}
+\pageheader{NPC Damage}
+
+\begin{tabularx}{\columnwidth}{ X | l r | p{3cm} p{3cm} | l}
+
+  \cardheader{6}{NPC Damage Types}
+  \headerrow{ 
+    \headercell{1}{Faction} &
+    \headercell{2}{Damage to Deal} &
+    \headercell{2}{Damage to Resist} &
+    \headercell{1}{EWAR}
+  }
+  \row{AltRow}{Angel Cartel & Explosive & Kinetic & \dtype{Explosive}{62} & \dtype{Kinetic}{22} & paint}
+  \row{Row}{Blood Raiders & EM & Thermal & \dtype{EM}{50} & \dtype{Thermal}{48} & neut, tracking}
+  \row{AltRow}{Guristas Pirates & Kinetic & Thermal & \dtype{Kenetic}{79} & \dtype{Thermal}{18} & ECM}
+  \row{Row}{Mordu's Legion & Kinetic & EM & \dtype{Kenetic}{70} & \dtype{Thermal}{30} & }
+  \row{AltRow}{Rogue Drones & EM & Thermal & - & - & }
+  \row{Row}{Sansha's Nation \textsuperscript{missions}  & EM & Thermal & \dtype{EM}{53} & \dtype{Thermal}{47} & tracking}
+  \row{AltRow}{Serpentis & Kinetic & Thermal 	& \dtype{Thermal}{55} & \dtype{Kinetic}{45} & sensor }
+  \row{Row}{CONCORD & Kinetic & Thermal & \multicolumn{2}{c|}{ALL} & }
+  \row{AltRow}{Equilibrium of Mankind & \multicolumn{2}{c|}{Kinetic} & \dtype{Kinetic}{74} & \dtype{Thermal}{26} & }
+  \row{Row}{Khanid Kingdom & EM & Thermal & \dtype{Thermal}{50} & \dtype{EM}{50} & }
+  \row{AltRow}{Sleepers & \multicolumn{2}{c|}{ALL} & \multicolumn{2}{c|}{ALL} & neut }
+  \row{Row}{Sansha Nation \textsuperscript{incursions} & \multicolumn{2}{c|}{ALL} & \multicolumn{2}{c|}{ALL} & all}
+  \row{AltRow}{Mercenaries & Kinetic & Thermal & \dtype{Kinetic}{50} & \dtype{Thermal}{50} & all except ECM}
+  \row{Row}{Triglavian Collective \textsuperscript{abyss} & Explosive & Thermal & \dtype{Thermal}{60} & \dtype{Explosive}{40} & all except ECM}
+  \row{AltRow}{Triglavian Collective \textsuperscript{invasions} & Explosive & Thermal & \multicolumn{2}{c|}{ALL} & all except ECM}
+  \row{Row}{Amarr Empire 	& EM & Thermal & \dtype{EM}{47} & \dtype{Thermal}{42} & neut, tracking}
+  \row{AltRow}{Caldari State & EM & Thermal & \dtype{Kinetic}{51} & \dtype{Thermal}{48} & ECM }
+  \row{Row}{Gallente Federation & Kinetic & Thermal & \dtype{Kinetic}{60} & \dtype{Thermal}{39} & sensor }
+  \row{AltRow}{Minmatar Republic & Explosive & Kinetic & \dtype{Explosive}{50} & \dtype{Kinetic}{31} & painters}
+  \row{Row}{Amar Emptire \textsuperscript{EDENCOM} & Thermal & EM & \dtype{EM}{58} & \dtype{Thermal}{42} & neut, tracking}
+  \row{AltRow}{Caldari State \textsuperscript{EDENCOM} & EM & Explosive & \dtype{EM}{51} & \dtype{Expliosive}{44} & ECM }
+  \row{Row}{Gallente Federation \textsuperscript{EDENCOM} & EM & Explosive & \dtype{EM}{58} & \dtype{Thermal}{42} & sensor}
+  \row{AltRow}{Minmatar Republic \textsuperscript{EDENCOM} & Kinetic & Explosive & \multicolumn{2}{c|}{ALL} & painters}
+\end{tabularx}
