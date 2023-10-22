@@ -77,7 +77,7 @@
   \fancyhead[C]{
     \begin{tabularx}{\textwidth}{l X r}
     \SetRowColor{HeadBackground}
-    \bfseries\textcolor{white}{EVE Online} &
+    \bfseries\textcolor{white}{\thesection} &
     \cellcolor{HeadBackgroundLight}\bfseries{#1} & 
     \cellcolor{HeadBackgroundLight}\bfseries\textcolor{black}{\thepage} \tn
     \arrayrulecolor{HeadBackground} \hline
@@ -123,6 +123,8 @@
 \newcommand {\kvrow} [3] {
   \row{#1}{ \bfseries #2 & #3 }
 }
+
+\newcommand {\pip}{\tikz\draw[black,fill=black] (0,0) circle (.5ex);}
 
 \raggedright
 \raggedcolumns
