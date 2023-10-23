@@ -14,18 +14,8 @@ jobs:
           extra_fonts: |
             ./fonts/FiraSans-Regular.ttf
             ./fonts/Inconsolata-Regular.ttf
-      - name: Convert ebook
-        uses: jensvog/ebook-convert-action@v1
-        with:
-          in: main.pdf
-          out: main.epub
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
           name: PDF
           path: main.pdf
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
-        with:
-          name: EPUB
-          path: main.epub
