@@ -4,7 +4,7 @@
 % Packages
 \usepackage{import}
 \usepackage{setspace}
-\usepackage[bottom=0.5in, top=0.8in, left=0.2in, right=0.2in]{geometry}
+\usepackage[paper=a4paper,margin=1in]{geometry}
 \usepackage{fancyhdr}           % For header and footer
 \usepackage{multicol}           % Allows multicols in tables
 \usepackage{multirow}           % Allows multicols in tables
@@ -23,25 +23,23 @@
 \usepackage{seqsplit}           % Splits long words.
 \usepackage{tikz}
 \usepackage[normalem]{ulem}     % For underlining links
+\author{}
 
-\author{Joe Bellus}
 
-% \addtolength{\textwidth}{6cm}
-\addtolength{\textheight}{-1cm}
-% \addtolength{\hoffset}{-3cm}
-% \addtolength{\voffset}{-2cm}
-% \addtolength{\topmargin}{-0.5cm}
-\setlength{\tabcolsep}{0.2cm} 
-\setlength{\headsep}{-3pt} 
-\setlength{\headheight}{31.5pt} 
-\setlength{\footskip}{3.7pt} 
-\renewcommand{\footrulewidth}{0pt}
-\renewcommand{\headrulewidth}{0pt} 
-\renewcommand{\seqinsert}{\ifmmode\allowbreak\else\-\fi} 
-% This two commands together give roughly
-% the right line height in the tables
-\renewcommand{\arraystretch}{1.2}
-\onehalfspacing
+
+\newcommand{\setup}{
+  \newgeometry{bottom=0.5in, top=0.8in, left=0.2in, right=0.2in}
+  \addtolength{\textheight}{-1cm}
+  \setlength{\tabcolsep}{0.2cm} 
+  \setlength{\headsep}{-3pt} 
+  \setlength{\headheight}{31.5pt} 
+  \setlength{\footskip}{3.7pt} 
+  \renewcommand{\footrulewidth}{0pt}
+  \renewcommand{\headrulewidth}{0pt} 
+  \renewcommand{\seqinsert}{\ifmmode\allowbreak\else\-\fi} 
+  \renewcommand{\arraystretch}{1.2}
+  \onehalfspacing
+}
 
 
 % Font and Colours
