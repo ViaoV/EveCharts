@@ -1,0 +1,81 @@
+\newcommand{\placeholder}[1] {
+  \SetRowColor{#1} \cellcolor{TableHeader}
+}
+\newcommand{\dt}[3] {
+  \SetRowColor{#1}
+  \multirow[c]{#3}{*}{\cellcolor{TableHeader}\begin{sideways}\textbf{#2}\end{sideways}}  
+}
+
+
+\pageheader{Combat Drones}
+\card{9}{c | X l l l l l l l}{Drone Attributes} {
+  \headerrow {
+    \headercell{1}{} &
+    \headercell{1}{Drone} &
+    \headercell{1}{Type} &
+    \headercell{1}{Modifier} &
+    \headercell{1}{Range} &
+    \headercell{1}{Tracking} &
+    \headercell{1}{Shields} &
+    \headercell{1}{Velocity} &
+    \headercell{1}{Orbit}
+  }
+
+  \placeholder{Row}         & Acolyte II & EM & 1.68 & \textbf{2400} & 2.988 & 48 & 4620 & 996 \\
+  \placeholder{AltRow}      & Imperial Navy Acolyte & EM & 1.68 & \textbf{2400} & \textbf{3.2868} & 96 & 4620 & 996 \\
+  \placeholder{Row}         & Hobgoblin II & Thermal & \textbf{1.92} & 2100 & 2.178 & 60 & 3360 & 660 \\
+  \placeholder{AltRow}      & Federation Navy Hobgoblin & Thermal & \textbf{1.92} & 2100 & 3.3958 & 120 & 3360 & 792 \\
+  \placeholder{Row}      & Hornet II & Kinetic & 1.8 & \textbf{2400} & 2.448 & 216 & 3780 & 894 \\
+  \placeholder{AltRow}      & Caldari Navy Hornet & Kinetic & 1.8 & \textbf{2400} & 2.6928 & \textbf{432} & 3780 & 894 \\
+  \placeholder{Row}         & Warrior II & Explosive & 1.56 & 2100 & 3.24 & 120 & \textbf{5040} & 900 \\
+  \dt{AltRow}{Light}{-8}    & Republic Fleet Warrior & Explosive & 1.56 & 2100 & 3.564 & 240 & \textbf{5040} & \textbf{1080} \\
+
+  \hline
+
+
+  \placeholder{AltRow}      & Hammerhead II & Thermal & 1.92 & 4200 & 0.696 & 120 & 2016 & 528 \\
+  \placeholder{Row}      & Federation Navy Hammerhead II & Thermal & 1.92 & 4200 & 0.7656 & 240 & 2016 & 528 \\
+  \placeholder{AltRow}      & Infiltrator II & EM & 1.68 & \textbf{4800} & 0.96 & 96 & 2760 & 630 \\
+  \placeholder{Row}      & Imperial Navy Infiltrator & EM & 1.68 & \textbf{4800} & 1.056 & 192 & 2760 & 630 \\
+  \placeholder{AltRow}      & Vespa II & Kinetic & 1.8 & \textbf{4800} & 0.78 & 432 & 2268 & 564 \\
+  \placeholder{Row}      & Caldari Navy Vespa & Kinetic & 1.8 & \textbf{4800} & 0.858 & 864 & 2268 & 564 \\
+  \placeholder{AltRow}      & Valkyrie II & Explosive & 1.56 & 4200 & 1.044 & 240 & \textbf{3000} & \textbf{660} \\
+  \dt{Row}{Medium}{-8}   & Republic Fleet Valkyrie & Explosive & 1.56 & 4200 & \textbf{1.1484} & 480 & \textbf{3000} & \textbf{660} \\
+
+  \hline
+
+  \placeholder{Row}      & Gecko & Omni & \textbf{2.05} & \textbf{4800} & 0.85 & \textbf{1440} & 1820 & 400 \\
+  \placeholder{AltRow}      & Ogre II & Thermal & \textbf{1.92} & 4200 & 0.54 & 240 & 1200 & 300 \\
+  \placeholder{Row}      & Federation Navy Ogre & Thermal & \textbf{1.92} & 4200 & 0.594 & 480 & 1200 & 300 \\
+  \placeholder{AltRow}      & Wasp II & Kinetic & 1.8 & \textbf{4800} & 0.642 & 864 & 1350 & 336 \\
+  \placeholder{Row}      & Caldari Navy Wasp & Kinetic & 1.8 & \textbf{4800} & 0.7062 & \textbf{1728} & 1350 & 336 \\
+  \placeholder{AltRow}      & Praetor II & EM & 1.68 & \textbf{4800} & 0.756 & 192 & 1656 & 384 \\
+  \placeholder{Row}      & Imperial Navy Praetor & EM & 1.68 & \textbf{4800} & 0.8316 & 384 & 1656 & 384 \\
+  \placeholder{AltRow}      & Berserker II & Explosive & 1.56 & 4200 & 0.852 & 480 & \textbf{1800} & \textbf{420} \\
+  \dt{Row}{Heavy}{-8}    & Republic Fleet Berserker & Explosive & 1.56 & 4200 & \textbf{0.9372} & 960 & \textbf{1800} & \textbf{420} \\
+
+  \hline
+
+  \placeholder{AltRow}      & Garde II & Thermal & \textbf{1.65} & 18000 & \textbf{0.0336} & 720 & - & - \\
+  \placeholder{Row}      & Federation Navy Garde & Thermal & \textbf{1.65} & 18000 & \textbf{0.03528} & 1440 & - & - \\
+  \placeholder{AltRow}      & Warden II & Kinetic & 1.4 & \textbf{60000} & 0.012 & 1152 & - & - \\
+  \placeholder{Row}      & Caldari Navy Warden & Kinetic & 1.4 & \textbf{60000} & 0.0126 & \textbf{2304} & - & - \\
+  \placeholder{AltRow}      & Curator II & EM & 1.55 & 42000 & 0.024 & 540 & - & - \\
+  \placeholder{Row}      & Imperial Navy Curator & EM & 1.55 & 42000 & 0.0252 & 1080 & - & - \\
+  \placeholder{AltRow}      & Bouncer II & Explosive & 1.45 & 36000 & 0.0168 & 960 & - & - \\
+  \dt{Row}{Sentry}{-8}   & Republic Fleet Bouncer & Explosive & 1.45 & 36000 & 0.01764 & 1920 & - & - \\
+
+ }
+
+\card{5}{X c c c c }{Drone Base Attributes} {
+  \headerrow {
+    \headercell{1}{} &
+    \headercell{1}{Light} &
+    \headercell{1}{Medium} &
+    \headercell{1}{Heavy} &
+    \headercell{1}{Sentry}
+  }
+  \row{Row}{Base Damage & 20 & 32 & 64 & 64}
+  \row{AltRow}{Signature Radius & 25 & 50 & 100 & 100}
+  \row{Row}{Bandwidth & 5 & 15 & 25 & 25}
+}

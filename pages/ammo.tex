@@ -1,0 +1,109 @@
+\newcommand\nnfootnote[1]{%
+  \begin{NoHyper}
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \end{NoHyper}
+}
+
+\pageheader{Turret Ammunition}
+\begin{multicols}{2}
+\card{7}{X c c c c c c}{Hybrid Charges} {
+  \headerrow {
+    \headercell{1}{Name} &
+    \headercell{1}{Kin} &
+    \headercell{1}{Thrm} &
+    \headercell{1}{Optimal} &
+    \headercell{1}{Falloff} &
+    \headercell{1}{Cap} &
+    \headercell{1}{Tracking}
+  }
+  \row{Row}{Uranium & 6 & 4 & 0.75 & - & -8\% & -}
+  \row{AltRow}{Thorium & 5 & 4 & 0.875 & - & -40\% & -}
+  \row{Row}{Lead & 5 & 3 & - & - & -50\% & -}
+  \row{AltRow}{Iridium & 4 & 3 & 1.2 & - & -24\% & -}
+  \row{Row}{Antimatter & 7 & 5 & 0.5 & - & 0\% & -}
+  \row{AltRow}{Plutonium & 6 & 5 & 0.625 & - & -5\% & -}
+  \row{Row}{Iron & 3 & 2 & 1.6 & - & -30\% & -}
+  \row{AltRow}{Tungsten & 4 & 2 & 1.4 & - & -27\% & -}
+  \hline
+  \row{Row}{Null & 5 & 6 & 1.4 & 1.4 & - & 0.75}
+  \row{AltRow}{Void & 8.9 & 8.9 & 0.75 & 0.5 & 25 & 0.75}
+  \hline
+  \row{Row}{Spike & 4 & 4 & 1.8 & - & 0 & 0.25}
+  \row{AltRow}{Javelin & 6 & 8 & 0.25 & - & 0 & 1.25}
+}
+\card{6}{X c c c c c}{Energy Crystals} {
+  \headerrow {
+    \headercell{1}{Name} &
+    \headercell{1}{EM} &
+    \headercell{1}{Therm} &
+    \headercell{1}{Optimal} &
+    \headercell{1}{Cap} &
+    \headercell{1}{Tracking}
+  }
+  \row{Row}{Multifrequency & 7 & 5 & 0.5 & 0 & -}
+  \row{AltRow}{Gamma & 7 & 4 & 0.625 & -15 & -}
+  \row{Row}{Xray  & 6 & 4 & 0.75 & -25 & -}
+  \row{AltRow}{Ultraviolet & 6 & 3 & 0.875 & -35 & -}
+  \row{Row}{Standard & 5 & 3 & 1 & -45 & -}
+  \row{AltRow}{Infrared & 5 & 2 & 1.2 & -35 & -}
+  \row{Row}{Microwave & 4 & 2 & 1.4 & -25 & -}
+  \row{AltRow}{Radio & 5 & 0 & 1.6 & -15 & -}
+  \hline
+  \row{Row}{Scorch & 9 & 2 & 1.4 & 0 & 0.75}
+  \row{AltRow}{Conflagration & 8.9 & 8.9 & 0.5 & 25 & 0.7}
+  \hline
+  \row{Row}{Aurora & 5 & 3 & 1.8 & - & 0.25}
+  \row{AltRow}{Gleam & 7 & 7 & 0.25 & - & 1.25}
+}
+\end{multicols}
+\begin{minipage}[t]{4.8in}
+  \card{8}{X c c c c c c c}{Projectile Ammo} {
+  \headerrow {
+    \headercell{1}{Name} &
+    \headercell{1}{EM} &
+    \headercell{1}{Expl} &
+    \headercell{1}{Therm} &
+    \headercell{1}{Kin} &
+    \headercell{1}{Optimal} &
+    \headercell{1}{Falloff} &
+    \headercell{1}{Tracking}
+  }
+  \row{Row}{EMP & 9 & 2 & 0 & 1 & 0.5 & - & 1}
+  \row{AltRow}{Phased Plasma & 0 & 0 & 10 & 2 & 0.5 & - & 1}
+  \row{AltRow}{Fusion & 0 & 10 & 0 & 2 & 0.5 & - & 1}
+
+  \row{Row}{Titanium Sabot & 0 & 2 & 0 & 6 & 1 & - & 1.2}
+  \row{AltRow}{Depleted Uranium  & 0 & 3 & 3 & 2 & 1 & - & 1.2}
+  \row{Row}{Proton & 3 & 0 & 0 & 2 & 1.6 & - & 1.05}
+  \row{AltRow}{Nuclear & 0 & 4 & 0 & 1 & 1.6 & - & 1.05}
+  \row{Row}{Carbonized Lead  & 0 & 1 & 0 & 4 & 1.6 & - & 1.05}
+  \hline
+  \row{AltRow}{Barrage & 0 & 6 & 0 & 5 & 1 & 1.5 & 0.75}
+  \row{Row}{Hail & 0 & 13.9 & 0 & 3.8 & 0.5 & 0.75 & 0.75}
+  \hline
+  \row{AltRow}{Quake & 0 & 9 & 0 & 5 & 0.25 & - & 1.25}
+  \row{Row}{Tremor & 0 & 5 & 0 & 3 & 1.8 & - & 0.25}
+}
+\end{minipage}
+\begin{minipage}[t]{3in}
+\card{5}{X c c c c}{Exotic Plasma} {
+  \headerrow {
+    \headercell{1}{Name} &
+    \headercell{1}{Therm} &
+    \headercell{1}{Expl} &
+    \headercell{1}{Optimal} &
+    \headercell{1}{Tracking}
+  }
+  \row{Row}{Tetryon & 72 & 33 & 0.7 & 1}
+  \row{AltRow}{Baryon & 57 & 42 & 1.1 & 1}
+  \row{Row}{Meson & 45 & 33 & 1.8 & 1}
+  \hline
+  \row{AltRow}{Mystic & 63 & 33 & 1.5 & 0.5}
+  \row{Row}{Occult & 72 & 63 & 0.6 & 0.75}
+
+}
+\end{minipage}
+\nnfootnote{Turret damages listed for small ammunition. 
+For ammo other than exotic plasma: Medium is 2x, Large is 4x, 
+and Extra Large is 8x.}

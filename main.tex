@@ -1,71 +1,25 @@
 \input{./lib/libcheatsheet.tex}
+\usepackage[pdfpagelabels,bookmarks,hyperindex,hyperfigures]{hyperref}
+
+\hypersetup{
+    colorlinks,
+    linkcolor={black!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
 \title{Eve Data Sheets\\
 \large Version 0.1}
 \author{ViaoV Miromme}
 \begin{document}
-\maketitle
-
-\vspace{0.5in}
-
-This is a compendium of data sheets for Eve Online.  I created this as a 
-personal tool, because I prefer having data that I can easily pull up on a 
-tablet or e-reader. This format is also fairly nice for printing.
-If you stumbled across it and find it useful, even better.
-
-\vspace{\baselineskip}
-
-This document is constructed using LaTeX and the source code can be found at: 
-
-\smallskip
-\begin{center}
-\textbf{https://github.com/ViaoV/EveCharts}
-\end{center}
-\vspace{\baselineskip}
-
-A Github issue can be created for any inaccuracies or mistakes. 
-Alternatively, pull requests are welcome to fix any issues or add additional 
-sheets.
-
-\newpage
 \tableofcontents
 \setup
-\newpage
-\small
-\import{./pages}{npc-damage-types.tex}
-\newpage
-\import{./pages}{combat_sites.tex}
-\newpage
-\import{./pages}{abyssal.tex}
-\newpage
-\import{./pages}{abyssal2.tex}
-\newpage
-\import{./pages}{mining.tex}
-\newpage
-\import{./pages}{pi.tex}
-%
-% \card{New Card}{
-%   \row{Row}{row 1}
-%   \row{AltRow}{row 2}
-% }
-%
-% \card{New Card} {
-%   \row{Row}{row 1}
-%   \row{AltRow}{row 2}
-% }
-%
-% \cardthree{New Card} {
-%   \row{Row}{ one & two & three}
-%   \row{AltRow}{ one & two & three}
-% }
-%
-% \vfill
-% \columnbreak
-%
-% \cardthree{New Card} {
-%   \row{Row}{ one & two & three}
-%   \row{AltRow}{ one & two & three}
-% }
-% %
-
-
+\loadpage{npc-damage-types}
+\loadpage{combat_sites}
+\loadpage{abyssal}
+\loadpage{abyssal2}
+\loadpage{mining}
+\loadpage{pi}
+\loadpage{drones}
+\loadpage{ammo}
 \end{document}
